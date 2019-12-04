@@ -10,7 +10,4 @@ class Genome:
         self.ga = ga
         for i in range(num_in):
             for j in range(num_out):
-                self.genes.append(Gene(i, 1000+j, np.random.normal(0, 1), True, self.ga.get_innov()))
-
-    def construct_network(self):
-        return ""
+                self.genes.append(Gene(str(i), str(1000+j), np.random.normal(0, 1), True, self.ga.get_innov()))
